@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#accordion").accordion();
+    });
+</script>
+
+<div id="accordion">
+  <h3>Início</h3>
+  <div>
+    <%= link_to 'Home', {:controller => "home", :action => "index"} %><br />
+  </div>
+  <h3>Cadastros</h3>
+  <div>
+    <%= link_to 'Produtos', produtos_path %>
+    <%= link_to 'Clientes', clientes_path %>
+    <%= link_to 'Funcionários', funcionarios_path %>
+    <%= link_to 'Fornecedores', fornecedores_path %>
+  </div>
+  <h3>Vendas</h3>
+  <div>
+  </div>
+  <h3>Estoque</h3>
+  <div>
+    <%= link_to 'Estoque', estoques_path %>
+  </div>
+  <h3>Consultar produtos</h3>
+  <div>
+  </div>
+  <h3>Utilitários</h3>
+  <div>
+  </div>
+  <h3>Configurações</h3>
+  <div>
+    <%= link_to 'Usuários', usuarios_path %>
+  </div>
+  <h3>Sair</h3>
+  <div>
+  </div>
+
+
+</div>
